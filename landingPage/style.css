@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@100&family=Ubuntu:wght@300&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    /* background-image: url('https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGxhaW4lMjBiYWNrZ3JvdW5kJTIwaW1hZ2VzfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60'); */
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    height: 100%;
+}
+
+/* FIRST PART */
+
+.landing {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.blurry-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.unsplash.com/photo-1555507036-ab1f4038808a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGZyZXNoJTIwZm9vZCUyMHByb2R1Y3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60');
+    /* Replace 'background-image.jpg' with your actual image file */
+    background-size: cover;
+    background-position: center;
+    filter: blur(1px);
+    z-index: -1;
+}
+
+.content {
+    position: absolute;
+    top: 40%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: #fff;
+    font-weight: bold;
+}
+
+.content h2 {
+    padding: 5px 0px 0px 0px;
+}
+
+.content>h1 {
+    font-size: 70px;
+    margin-bottom: 10px;
+    background-image: url(https://images.unsplash.com/photo-1508898578281-774ac4893c0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJhY2tncm91bmQlMjBpbWFnZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60);
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: 2s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 10px;
+
+}
+
+
+h1:active {
+    color: orangered;
+}
+
+.landing>p {
+    font-size: 1em;
+    text-align: left;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #007bff;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* SECOND PART */
+.landing2 h1 {
+    text-align: center;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+
+.box {
+    text-align: center;
+}
+
+.box img {
+    width: 100px;
+    /* Adjust as needed */
+    height: 100px;
+    /* Adjust as needed */
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.box>p {
+    font-size: 1.2em;
+}
+
+
+/* PART 3 */
+
+
+.review-section {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    padding: 50px 20px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('https://images.unsplash.com/photo-1644925757334-d0397c01518c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80');
+    /* Replace with your image path */
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent overlay */
+}
+
+.review-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    transition: font-size 0.9s;
+    cursor: pointer;
+}
+
+.h2:hover {
+    font-size: 3.5em;
+}
+
+.review {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: rgba(143, 110, 110, 0.9);
+    border-radius: 10px;
+    position: relative;
+}
+
+blockquote {
+    font-size: 1.2em;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.customer-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.customer-info img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+
+}
+
+.customer-info>p {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+
+
+/* PART 04 */
+
+.container1 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    /* overflow: hidden; */
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 228px;
+}
+
+.box1 {
+    text-align: center;
+}
+
+.box1 img {
+    width: 200px;
+    /* Adjust as needed */
+    height: auto;
+    /* Adjust as needed */
+    /* border-radius: 50%; */
+    object-fit: cover;
+    margin-bottom: 10px;
+    box-shadow: 15px 8px 8px rgba(0, 0, 0, 0.25);
+    /* This sets a subtle shadow */
+}
+
+.box11 img {
+    width: 200px;
+    /* Adjust as needed */
+    height: 200px;
+    /* Adjust as needed */
+
+}
+
+.box1>p {
+    font-size: 1.2em;
+}
+
+
+/* PART 05 */
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.left-container,
+.right-container {
+    margin: 10px;
+}
+
+.right-container>h1,
+p {
+    text-align: left;
+}
+
+.right-container>h1 {
+    font-size: 38px;
+}
+
+.right-container {
+    padding: 0px 30px 0px 0px;
+}
+
+.left-container> img {
+    max-width: 350px;
+    padding: 0px 0px 0px 70px;
+    height: 300px;
+}
+
+
+
+
+
+/* PART 06      */
+
+.containerLast {
+    background-image: url(https://images.unsplash.com/photo-1490735891913-40897cdaafd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fGxpZ2h0JTIwYmFja2dyb3VuZCUyMGltYWdlfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 250px 50px 250px;
+    text-align: center;
+}
+
+.containerLast>h1 {
+    font-size: 40px;
+}
+
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.footer img {
+    height: 60px;
+    /* Adjust the height of the logo as needed */
+    margin-right: 20px;
+    /* Add some space between the logo and the text */
+}
+
+.footer .left {
+    display: flex;
+    align-items: center;
+}
+
+.footer .right {
+    font-size: 0.8em;
+}
+
+
+/* Add this media query at the end of your existing CSS */
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens (e.g., mobile devices) here */
+
+    /* PART 01 */
+    .content {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .content h1,
+    .content h2,
+    .content p,
+    .btn {
+        text-align: center;
+    }
+
+    /* PART 02 */
+    .landing2 h1 {
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        margin-bottom: 20px;
+    }
+
+    /* PART 03 */
+    .review-container {
+        max-width: none;
+    }
+
+    /* PART 04 */
+    .container1 {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+
+    /* PART 05 */
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-container,
+    .right-container {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* PART 06 */
+    .containerLast {
+        padding: 50px 20px;
+    }
+}
+
+
+.container01 {
+    width: 80%;
+    /* Adjust the width as needed */
+    margin: 0 auto;
+    /* This centers the container horizontally */
+    background-color: rgba(255, 255, 255, 0.3);
+    /* Add a semi-transparent background color to make content more readable */
+    padding: 20px;
+    /* Add padding to the container */
+    border-radius: 10px;
+    /* Optional: Add rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    /* Optional: Add a shadow effect */
+}
